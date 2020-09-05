@@ -8,7 +8,8 @@ jQuery(document).ready(function($) {
       }
       owlitem.removeClass("owl-carousel");
     } else if (window.matchMedia("(min-width: 576px)").matches) {
-      owlitem.addClass("owl-carousel").trigger("refresh.owl.carousel");
+      owlitem.addClass("owl-carousel");
+      owlitem.trigger("refresh.owl.carousel");
       owlitem.owlCarousel({
         items: 4,
         slideSpeed: 500,
@@ -25,8 +26,8 @@ jQuery(document).ready(function($) {
   }
 
   testCarousel();
-  $(window).matchMedia(testCarousel);
-  
+  // $(window).matchMedia(testCarousel);
+
   // function testCarousel() {
   //   let checkWidth = $(window).width();
   //   let owlitem = $(".test");
