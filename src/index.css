@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(limegreen), to(transparent)), -webkit-gradient(linear, left top, right top, from(skyblue), to(transparent)), -webkit-gradient(linear, right top, left top, from(coral), to(transparent));
+  background: linear-gradient(limegreen, transparent), linear-gradient(90deg, skyblue, transparent), linear-gradient(-90deg, coral, transparent);
+  background-blend-mode: screen;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 100px;
+  padding: 15px 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#f5a803), color-stop(35%, #dd0844), to(#00d4ff));
+  background: linear-gradient(90deg, #f5a803 0%, #dd0844 35%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 576px) {
+  .test {
+    margin-top: 20px;
+    z-index: 40;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(0, 200px));
+    gap: 20px;
+    margin: 0 auto;
+  }
+}
+
+.test .item {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 1px 1px #ccc;
+  box-shadow: 0 1px 1px #ccc;
+  background: #ffdea860;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.test .item img {
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .test .item {
+    display: none;
+  }
+}
+
+.btn {
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  color: #555555;
+  display: none;
+  width: 100%;
+  margin: 10px 0;
+  background: aquamarine;
+}
+
+@media screen and (max-width: 576px) {
+  .btn {
+    display: block;
+  }
+}
